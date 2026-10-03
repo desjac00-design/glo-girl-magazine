@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+body {
+    margin: 0;
+    background-color: #E8D5C4;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    letter-spacing: 5px;
+    color: #4F3728;
+}
+
+.logo span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    margin-left: 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+.issue {
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 75px;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    color: #4F3728;
+    margin: 25px 0;
+}
+
+.subtitle {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background: #555;
+}
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 60px;
+}
+
+.hero-image img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero-text {
+    max-width: 500px;
+    text-align: center;
+}.articles {
+    padding: 80px 60px;
+    border-top: 1px solid #6B4F3A;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    font-weight: 500;
+    color: #4F3728;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.article-card {
+    background-color: #F3E5D8;
+    border: 1px solid #6B4F3A;
+    padding-bottom: 25px;
+    border-radius: 25px 25px 5px 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(107, 79, 58, 0.2);
+}
+
+.article-card:hover .article-image img {
+    transform: scale(1.05);
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-card .category,
+.article-card h3,
+.article-card > p,
+.article-card a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.category {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #6B4F3A;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.article-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #4F3728;
+    line-height: 1.1;
+}
+
+.article-card > p {
+    line-height: 1.5;
+}
+
+.article-card a {
+    color: #6B4F3A;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #6B4F3A;
+    padding-bottom: 4px;
+    transition: letter-spacing 0.3s ease;
+}
+
+.article-card a:hover {
+    letter-spacing: 4px;
+}
+.login-section {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.login-box {
+    width: 420px;
+    background-color: #F3E5D8;
+    border: 1px solid #6B4F3A;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.login-small {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #6B4F3A;
+}
+
+.login-box h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #4F3728;
+    margin: 15px 0;
+}
+
+.login-intro {
+    color: #6B4F3A;
+    margin-bottom: 35px;
+}
+
+.login-box form {
+    text-align: left;
+}
+
+.login-box label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #4F3728;
+    margin: 18px 0 8px;
+}
+
+.login-box input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    border: 1px solid #6B4F3A;
+    background-color: #FFF9F4;
+    font-family: Poppins, sans-serif;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    background-color: #6B4F3A;
+    color: white;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.signup-text {
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+.signup-text a {
+    color: #6B4F3A;
+    font-weight: bold;
+}
